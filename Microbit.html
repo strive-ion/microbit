@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microbit小组作品-介绍</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        nav a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+            color: rgb(145, 145, 145);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Microbit小组作品介绍</h1>
+    </header>
+
+    <nav>
+        <a href="#introduction">介绍</a>
+        <a href="#projects">作品展示</a>
+        <a href="#warning">注意事项</a>
+        <a href="#members">成员介绍</a>
+        <a href="#contact">联系我们</a>
+        
+    </nav>
+
+    <section id="introduction">
+        <h2>介绍</h2>
+        <p>Microbit015小组是由一个学校兴趣小组组成的团队,旨在通过分享和交流Microbit项目,促进Microbit平台的普及和发展。</p>
+        <p><br></p>
+    </section>
+
+    <section id="projects">
+        <h2>作品展示</h2>
+        <p>在这里,您可以了解到Microbit小组成员的作品。</p>
+        <p>——半智能多功能机——</p>
+        <p>我们设计了一个半智能多功能机，可以执行6大任务，如聊天、指南针、游戏等。</p>
+        <p>创意设计：我们的作品充满创意和想象力，展现出与众不同的特点。</p>
+        <p>丰富的功能：作品内拥有六大使用功能，可以满足不同用户的基本需求。</p>
+        <p>易于操作：我们注重用户体验，使得我们的作品操作简单易懂，适合各个年龄段的人使用。</p>
+        <p>_____________________________________________________________________________________________________________________</p>
+        <p>六大功能介绍：①聊天；计时器；手电筒；指南针；游戏；其他功能(测试)。以及一个附加功能：关于本机</p>
+        <p><br></p>
+        <p>1.通讯</p>
+        <p>通讯功能可以给另一台或多台已连接microbit设备发送信息；我们的发送方式为26位字母单独发送。后续在开发多字母(单词)发送，敬请期待<br></p>
+        <p><br></p>
+        <p>2.计时器<br></p>
+        <p>计时器功能可以使用microbit设备通过旋钮选择时间来计时，按下按钮确定时间并开始计时，计时完成后会显示提示图标3次。计时范围为0min-10min，但由于受microbit显示屏滚动速度限制，在显示多位数时间时需等待完目前时间才能显示下一时间，导致在记时时显示外观上有瑕疵，后续在开发端会添加滚动速度插件与添加时间暂停代码，敬请期待。<br></p>
+        <p><br></p>
+        <p>3.灯亮</p>
+        <p>灯亮功能是在microbit设备上按下按钮，来控制microbit设备上的灯亮灭。其中配备着1x灯亮模块与6xLED灯模块，其中可按下“A”“B”键来切换led灯显示颜色。</p>
+        <p><br></p>
+        <p>4.指南针</p>
+        <p>指南针功能可以使microbit实时显示当前方向度数（0°~360°）与方位箭头（8个大致方向），按下按钮刷新指南针方位</p>
+        <p><br></p>
+        <p>5.游戏(只有v2主板可使用，v1主板用户请使用V1.8.3bata（隔去game、朋友圈）)</p>
+        <p>游戏功能让玩家可使飞机在y0上使用“A”“B”按键在x轴0~5移动，来躲避在y5上的敌机。游戏一共有20个关卡，每通过一个关卡分数+1分，当分数达到20分时，游戏结束。若玩家操控的飞机撞到敌方飞机，则游戏结束。游戏其中有着4个阶段：第一阶段是1~5局，敌机在每局有一台以每0.5s的速度下落；第二阶段是6~11局，敌机在每局有两台且下落速度加快；第三阶段是12~17局，敌机在每局有三台且下落速度加快；第四阶段是18~20局，敌机在每局有四台且下落速度到最快。目前正在编写关于飞机在y轴移动的代码（在之前已经开发出来，但因当时的设备不支持原因已去除）与地方飞机在各个方向随机出现的代码(V1.9.7,v2)，敬请期待</p>
+        <p><br></p>
+        <p>6.其他功能（测试）</p>
+        <p>其他功能是开发者在制作microbit时做出的一个测试工具(目前可用于设备or代码故障时的测试工具)，用来测试当前microbit外部硬件扩展是否正常（并不包括microbit主板本身测试，按钮除外）。目前1.9.5(v2)版本内置三个功能:按钮测试功能、旋钮测试功能、led与灯亮测试功能。目前正在开发更多测试功能，方便用户使用测试，敬请期待。</p>
+        <p><br></p>
+        <p>7.关于本机...</p>
+        <p>由于microbit显示屏5x5像素块的原因，该功能只能显示GitHub此项目组的网站，并在GitHub上有着此网站的地址与各个版本的下载链接。</p>
+        <p><br></p>
+
+
+
+    </section>
+
+    <section id="warning">
+        <h2>注意事项</h2>
+        <p>1.关于microbit主板</p>
+        <p>由于microbit主板版本不同，因此，拥有所有功能的V1.9.5仅支持v2主板，若使用v1主板，请使用V1.8.3bata（隔去game、朋友圈）</p>
+        <p><br></p>
+        <p>2.关于microbit外接硬件端口管理</p>
+        <p>各个外接硬件所对应的端口如下所示</p>
+        <p>:①按钮：P2<br>②旋钮：P1<br>③灯亮：P0<br>④双LED灯：P15、P16</p>
+        <p><br></p>
+
+    </section>
+    
+    <section id="members">
+        <h2>成员介绍</h2>
+        <p>在这里,您可以了解到Microbit小组成员的信息。</p>
+        <p>小组成员为昆明市第一中学西山学校2025届1班-李昊远 孟士博
+        <p><br></p>
+    </section>
+    
+    <section id="contact">
+        <h2>联系我们</h2>
+        <p>您可以通过以下方式联系到我们。</p>
+        <p>邮箱:3343324745@qq.com</p>.
+        <p>微信:strive3343324745</p>
+        <p><br></p>
+
+    </section>
+    
+    <footer>
+        <p>Microbit小组</p>
+        <p>2023.11</p>
+    </footer>
+
+
+</body>
+</html>
